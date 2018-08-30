@@ -46,6 +46,3 @@ public final class Solution {
         return gcd;
     }
 }
-
-
-
