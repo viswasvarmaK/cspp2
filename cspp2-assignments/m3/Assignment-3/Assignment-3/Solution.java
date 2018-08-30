@@ -27,7 +27,7 @@ public final class Solution {
         System.out.println(gcd(n1, n2));
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      n1    The n 1
