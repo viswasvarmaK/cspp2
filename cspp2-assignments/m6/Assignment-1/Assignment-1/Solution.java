@@ -29,7 +29,7 @@ public final class Solution {
                 }
                 if(count != 2) {
                     System.out.println(i);
-                }       
+                }
             }
         }
     }
