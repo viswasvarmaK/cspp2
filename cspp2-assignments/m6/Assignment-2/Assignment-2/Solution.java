@@ -54,6 +54,7 @@ final class Solution {
                 }
                 else { 
                     a[i][j] = 0;
+                    break;
                 }
             }
         }
