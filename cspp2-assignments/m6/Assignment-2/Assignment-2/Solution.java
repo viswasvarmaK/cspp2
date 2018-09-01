@@ -27,22 +27,31 @@ final class Solution {
             for (int j = 0 ; j < columns; j++) {
                 if (a[i][j] > 450) {
                     a[i][j] = 500;
+                    continue;
                 }else if(a[i][j] <= 450) {
                     a[i][j] = 400;
+                    continue;
                 }else if(a[i][j] >= 350) {
                     a[i][j] = 400;
+                    continue;
                 }else if(a[i][j] <= 350) {
                     a[i][j] = 300;
+                    continue;
                 }else if(a[i][j] >= 250) {
                     a[i][j] = 300;
+                    continue;
                 }else if(a[i][j] <= 250) {
                     a[i][j] = 200;
+                    continue;
                 }else if(a[i][j] >= 150) {
                     a[i][j] = 200;
+                    continue;
                 }else if(a[i][j] <= 150) {
                     a[i][j] = 100;
+                    continue;
                 }else if(a[i][j] >= 50) {
                     a[i][j] = 100;
+                    continue;
                 }else { 
                     a[i][j] = 0;
                     break;
