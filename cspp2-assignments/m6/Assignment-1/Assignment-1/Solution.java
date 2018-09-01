@@ -40,7 +40,6 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        int count = 0;
         oddComposites(n);
     }
 }
