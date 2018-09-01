@@ -3,7 +3,7 @@ import java.util.Scanner;
  * Write a java program to round the
  * elements of a matrix to the nearest 100.
  *
- * @author :Viswas
+ * @author :Viswas 
  */
 final class Solution {
     /**
@@ -22,39 +22,28 @@ final class Solution {
      *
      * @return     Matrix of the rounded elements
      */
-    static int[][] roundHundred(final int[][] a, final int rows,
-     final int columns) {
-        int p = 550;
-        int q = 500;
-        int r = 450;
-        int s = 400;
-        int t = 350;
-        int u = 300;
-        int v = 250;
-        int w = 200;
-        int x = 150;
-        int y = 100;
-        int z = 50;
+    static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                if (a[i][j] > r && a[i][j] < p) {
-                    a[i][j] = q;
+                if (a[i][j] > 450 && a[i][j] < 550) {
+                    a[i][j] = 500;
                 }
-                if (a[i][j] <= r && a[i][j] >= t) {
-                    a[i][j] = s;
+                if (a[i][j] <= 450 && a[i][j] >= 350) {
+                    a[i][j] = 400;
                 }
-                if (a[i][j] <= t && a[i][j] >= v) {
-                    a[i][j] = u;
+                if (a[i][j] <= 350 && a[i][j] >= 250) {
+                    a[i][j] = 300;
                 }
-                if (a[i][j] <= v && a[i][j] >= x) {
-                    a[i][j] = w;
+                if (a[i][j] <= 250 && a[i][j] >= 150) {
+                    a[i][j] = 200;
                 }
-                if (a[i][j] <= x && a[i][j] >= z) {
-                    a[i][j] = y;
+                if (a[i][j] <= 150 && a[i][j] >= 50) {
+                    a[i][j] = 100;
                 }
-                if (a[i][j] < z) {
+                if (a[i][j] < 50) {
                     a[i][j] = 0;
                 }
+                
             }
         }
         return a;
