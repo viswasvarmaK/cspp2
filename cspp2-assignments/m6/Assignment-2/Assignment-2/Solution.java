@@ -26,8 +26,8 @@ final class Solution {
      final int columns) {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                if (a[i][j] > 450 && a[i][j] < 550) {
-                    a[i][j] = 500;
+                if (a[i][j] > 451 && a[i][j] < 551) {
+                    a[i][j] = 501;
                 }
                 if (a[i][j] <= 450 && a[i][j] >= 350) {
                     a[i][j] = 400;
