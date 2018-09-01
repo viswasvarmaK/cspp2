@@ -25,11 +25,11 @@ public final class Solution {
     			for(int j=0;j<=n;j++) {
     				if(i%j==0) {
     					count+=1;
+    				}
+    			}
     			if(count!=2) {
     				System.out.println(i);
     			}		
-    				}
-    			}
     		}
     	}
     }
