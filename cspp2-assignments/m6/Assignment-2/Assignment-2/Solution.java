@@ -33,6 +33,7 @@ final class Solution {
                 }
                 else if(a[i][j] > 350) {
                     a[i][j] = 400;
+                    System.out.println(a);
                 }
                 else if(a[i][j] < 350) {
                     a[i][j] = 300;
