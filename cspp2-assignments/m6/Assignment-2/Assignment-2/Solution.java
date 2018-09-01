@@ -31,6 +31,7 @@ final class Solution {
                 else {
                     a[i][j] = 100;
                 }
+
             }
         }
         return a;
