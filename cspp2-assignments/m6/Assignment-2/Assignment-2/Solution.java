@@ -37,22 +37,22 @@ final class Solution {
         int z = 50;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                if (a[i][j] > r && a[i][j] < p) {
+                if (a[i][j] > r*1 && a[i][j] < p*1) {
                     a[i][j] = q;
                 }
-                if (a[i][j] <= r && a[i][j] >= t) {
+                if (a[i][j] <= r*1 && a[i][j] >= t*1) {
                     a[i][j] = s;
                 }
-                if (a[i][j] <= t && a[i][j] >= v) {
+                if (a[i][j] <= t*1 && a[i][j] >= v*1) {
                     a[i][j] = u;
                 }
-                if (a[i][j] <= v && a[i][j] >= x) {
+                if (a[i][j] <= v*1 && a[i][j] >= x*1) {
                     a[i][j] = w;
                 }
-                if (a[i][j] <= x && a[i][j] >= z) {
+                if (a[i][j] <= x*1 && a[i][j] >= z*1) {
                     a[i][j] = y;
                 }
-                if (a[i][j] < z) {
+                if (a[i][j] < z*1) {
                     a[i][j] = 0;
                 }
             }
