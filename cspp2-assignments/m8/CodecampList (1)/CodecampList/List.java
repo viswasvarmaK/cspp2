@@ -302,7 +302,8 @@ public class List {
                 // review the output testcase file
                 System.out.println(l);
 
-                break;
+  
+              break;
                 case "remove":
                 l.remove(Integer.parseInt(tokens[1]));
                 break;
