@@ -301,8 +301,6 @@ public class List {
                 // expected format is [item-1,item-2,...,item-n]
                 // review the output testcase file
                 System.out.println(l);
-
-  
               break;
                 case "remove":
                 l.remove(Integer.parseInt(tokens[1]));
