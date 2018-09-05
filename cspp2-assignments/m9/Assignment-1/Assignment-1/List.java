@@ -1,10 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
-    /*
+    /**
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
      * An array would be good. Right?
@@ -79,7 +78,7 @@ public class List {
         size = 0;
     }
 
-    /*
+    /**
      * Overloaded constructor with list capacity as argument
      * The default constructor sets the list capacity to 10
      * So, adding an item when the list size is 10
@@ -87,7 +86,6 @@ public class List {
      * There will be some clients of the ADT that will require
      * the list to contain n elements which is known
      * at the time of creating the list.
-     * 
      * The overloaded constructor is a way to initialize a list with
      * a list capacity of n items where n is given as an argument to
      * constructor.
@@ -95,9 +93,12 @@ public class List {
      */
 
     // todo - add an overloaded constructor here
-
+    public List(int n) {
+        list = new int[n];
+        size = 0;
+    }
     
-    /*
+    /**
      * The add method does what the name suggests.
      * Add an int item to the list.
      * The assumption is to store the item at the end of the list
@@ -232,7 +233,7 @@ public class List {
         return -1;
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -275,5 +276,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
