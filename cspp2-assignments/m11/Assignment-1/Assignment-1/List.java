@@ -470,7 +470,3 @@ public class List {
         }
     }
 }
-
-
-
-
