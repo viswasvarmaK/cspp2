@@ -137,8 +137,6 @@ public final class Solution {
         } catch(Exception e) {
             System.out.println("Error! Malformed question");
         }
-        
-
     }
 
     /**
@@ -152,26 +150,27 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        for(int i = 0; i < quizes.size(); i++) {
-            System.out.println(quizes.get(i).questiontxt + "(" + quizes.get(i).scorereport + ")");
-            for (int j = 0 ; j < quizes.get(i).choices.length; j++) {
+        for (int i = 0; i < quizes.size(); i++) {
+            System.out.println(quizes.get(i).questiontxt +
+             "(" + quizes.get(i).scorereport + ")");
+            for (int j = 0; j < quizes.get(i).choices.length; j++) {
                 System.out.print(quizes.get(i).choices[j] + "   ");
             }
             System.out.println();
             System.out.println();
         }
-        while(answerCount > 0) {
+        while (answerCount > 0) {
             //System.out.println(answerCount + " counttt");
             String line = s.nextLine();
             String[] tok = line.split(" ");
             //System.out.println(line + " lineeeee");
             if (tok[1].equals("a")) {
                 tok[1] = "1";
-            } else if (tok[1].equals("b")){
+            } else if (tok[1].equals("b")) {
                 tok[1] = "2";
             } else if (tok[1].equals("c")) {
                 tok[1] = "3";
-            }else if (tok[1].equals("d")) {
+            } else if (tok[1].equals("d")) {
                 tok[1] = "4";
             }
             answers.add(tok[1]);
@@ -182,7 +181,7 @@ public final class Solution {
 
     }
 
-    /**
+    /**.
      * Displays the score report
      *
      * @param      quiz     The quiz object
@@ -193,11 +192,12 @@ public final class Solution {
         for (int i = 0; i < quizes.size(); i++) {
             System.out.println(quizes.get(i).questiontxt);
                 if (answers.get(i).equals(quizes.get(i).correctoption)) {
-                    System.out.println(" Correct Answer! - Marks Awarded: " + quizes.get(i).scorereport);
+                    System.out.println(" Correct Answer! - Marks Awarded: " +
+                     quizes.get(i).scorereport);
                     finalScore += Integer.parseInt(quizes.get(i).scorereport);
                 } else {
-
-                    System.out.println(" Wrong Answer! - Penalty: " + quizes.get(i).penality);
+                    System.out.println(" Wrong Answer! - Penalty: " +
+                     quizes.get(i).penality);
                     finalScore += Integer.parseInt(quizes.get(i).penality);
                 }
     }
