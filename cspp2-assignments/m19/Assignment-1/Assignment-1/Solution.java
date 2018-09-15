@@ -105,23 +105,23 @@ public final class Solution {
                 String line = s.nextLine();
                 String[] tokens = line.split(":");
                 String[] choices = tokens[1].split(",");
-                if(tokens[0].equals("")){
+                if (tokens[0].equals("")) {
                     System.out.println("Error! Malformed question");
                     return;
                 }
-                if(choices.length <= 1) {
+                if (choices.length <= 1) {
                     System.out.println("trick question  does not have enough answer choices");
                     return;
                 }
-                if(Integer.parseInt(tokens[3]) < 0){
+                if (Integer.parseInt(tokens[3]) < 0) {
                     System.out.println("Invalid max marks for question about sony");
                     return;
                 }
-                if(Integer.parseInt(tokens[4]) > 0){
+                if (Integer.parseInt(tokens[4]) > 0) {
                     System.out.println("Invalid penalty for question about sony");
                     return;
                 }
-                if(!tokens[2].equals("1") && !tokens[2].equals("2") && !tokens[2].equals("3") && !tokens[2].equals("4")) {
+                if (!tokens[2].equals("1") && !tokens[2].equals("2") && !tokens[2].equals("3") && !tokens[2].equals("4")) {
                     System.out.println("Error! Correct answer choice number is out of range for question text 1");
                     return;
                 }
@@ -129,7 +129,7 @@ public final class Solution {
                 quizes.add(q);
                 questionCount--;
             }
-            if(quizes.size() != 0) {
+            if (quizes.size() != 0) {
                 System.out.println(quizes.size() + " are added to the quiz");
             }else {
                 System.out.println("Quiz does not have questions");
@@ -152,9 +152,9 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        for(int i=0;i<quizes.size();i++){
-            System.out.println(quizes.get(i).questiontxt+"("+quizes.get(i).scorereport+")");
-            for(int j =0 ; j<quizes.get(i).choices.length; j++) {
+        for(int i = 0; i < quizes.size(); i++) {
+            System.out.println(quizes.get(i).questiontxt + "(" + quizes.get(i).scorereport + ")");
+            for (int j = 0 ; j < quizes.get(i).choices.length; j++) {
                 System.out.print(quizes.get(i).choices[j] + "   ");
             }
             System.out.println();
@@ -165,7 +165,7 @@ public final class Solution {
             String line = s.nextLine();
             String[] tok = line.split(" ");
             //System.out.println(line + " lineeeee");
-            if(tok[1].equals("a")) {
+            if (tok[1].equals("a")) {
                 tok[1] = "1";
             } else if (tok[1].equals("b") ){
                 tok[1] = "2";
@@ -191,17 +191,16 @@ public final class Solution {
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
         int finalScore = 0;
-        for(int i=0;i<quizes.size();i++) {
+        for (int i = 0; i < quizes.size(); i++) {
             System.out.println(quizes.get(i).questiontxt);
-            //System.out.println(answers.get(i) + " - "+ quizes.get(i).correct);
-                if(answers.get(i).equals(quizes.get(i).correctoption)){
+                if (answers.get(i).equals(quizes.get(i).correctoption)) {
                     
-                    System.out.println(" Correct Answer! - Marks Awarded: "+quizes.get(i).scorereport);
+                    System.out.println(" Correct Answer! - Marks Awarded: " + quizes.get(i).scorereport);
                     finalScore += Integer.parseInt(quizes.get(i).scorereport);
                     
                 } else {
 
-                    System.out.println(" Wrong Answer! - Penalty: "+quizes.get(i).penality);
+                    System.out.println(" Wrong Answer! - Penalty: " + quizes.get(i).penality);
                     finalScore += Integer.parseInt(quizes.get(i).penality);
                     
                 }
@@ -209,10 +208,8 @@ public final class Solution {
             
 
     }
-    if(quizes.size() != 0){
-        System.out.println("Total Score: "+finalScore );
+    if (quizes.size() != 0) {
+        System.out.println("Total Score: " + finalScore);
     }
-    
 }
-    
 }
