@@ -156,7 +156,7 @@ public final class Solution {
         // read the user responses from the console
         // store the user respones in the quiz object
         for(int i=0;i<quizes.size();i++){
-            System.out.println(quizes.get(i).question+"("+quizes.get(i).maxMarks+")");
+            System.out.println(quizes.get(i).question+"("+quizes.get(i).scorereport+")");
             for(int j =0 ; j<quizes.get(i).choices.length; j++) {
                 System.out.print(quizes.get(i).choices[j] + "   ");
             }
