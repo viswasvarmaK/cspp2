@@ -30,7 +30,7 @@ class Quiz{
     }
     public Quiz() {
 
-    }    
+    }
     
 }
 /**
@@ -167,18 +167,17 @@ public final class Solution {
             //System.out.println(line + " lineeeee");
             if (tok[1].equals("a")) {
                 tok[1] = "1";
-            } else if (tok[1].equals("b") ){
+            } else if (tok[1].equals("b")){
                 tok[1] = "2";
             } else if (tok[1].equals("c")) {
                 tok[1] = "3";
             }else if (tok[1].equals("d")) {
                 tok[1] = "4";
-            } 
+            }
             answers.add(tok[1]);
             answerCount--;
 
         }
-        
 
 
     }
@@ -194,19 +193,13 @@ public final class Solution {
         for (int i = 0; i < quizes.size(); i++) {
             System.out.println(quizes.get(i).questiontxt);
                 if (answers.get(i).equals(quizes.get(i).correctoption)) {
-                    
                     System.out.println(" Correct Answer! - Marks Awarded: " + quizes.get(i).scorereport);
                     finalScore += Integer.parseInt(quizes.get(i).scorereport);
-                    
                 } else {
 
                     System.out.println(" Wrong Answer! - Penalty: " + quizes.get(i).penality);
                     finalScore += Integer.parseInt(quizes.get(i).penality);
-                    
                 }
-            
-            
-
     }
     if (quizes.size() != 0) {
         System.out.println("Total Score: " + finalScore);
