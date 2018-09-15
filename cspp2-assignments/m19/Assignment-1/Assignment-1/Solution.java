@@ -73,7 +73,6 @@ class Quiz {
     public Quiz() {
 
     }
-    
 }
 /**
  * Solution class for code-eval.
