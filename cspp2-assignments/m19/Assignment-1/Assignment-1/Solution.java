@@ -100,7 +100,7 @@ public final class Solution {
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
         try {
-            while(questionCount > 0) {
+            while (questionCount > 0) {
                 String line = s.nextLine();
                 String[] tokens = line.split(":");
                 String[] choices = tokens[1].split(",");
@@ -109,11 +109,13 @@ public final class Solution {
                     return;
                 }
                 if (choices.length <= 1) {
-                    System.out.println("trick question  does not have enough answer choices");
+                    System.out.println
+                    ("trick question  does not have enough answer choices");
                     return;
                 }
                 if (Integer.parseInt(tokens[3]) < 0) {
-                    System.out.println("Invalid max marks for question about sony");
+                    System.out.println
+                    ("Invalid max marks for question about sony");
                     return;
                 }
                 if (Integer.parseInt(tokens[4]) > 0) {
