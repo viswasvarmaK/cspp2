@@ -69,7 +69,6 @@ public final class Solution {
                 System.out.println("|----------------|");
                 //System.out.println(tokens[1]);
                 loadQuestions(s, q, Integer.parseInt(tokens[1]));
-
                 break;
                 case "START_QUIZ":
                 System.out.println("|------------|");
@@ -121,20 +120,21 @@ public final class Solution {
                     System.out.println("Invalid penalty for question about sony");
                     return;
                 }
-                if (!tokens[2].equals("1") && !tokens[2].equals("2") && !tokens[2].equals("3") && !tokens[2].equals("4")) {
+                if (!tokens[2].equals("1") && !tokens[2].equals("2")
+                 && !tokens[2].equals("3") && !tokens[2].equals("4")) {
                     System.out.println("Error! Correct answer choice number is out of range for question text 1");
                     return;
                 }
-                Quiz q = new Quiz(tokens[0],choices,tokens[2],tokens[3],tokens[4]);
+                Quiz q = new Quiz(tokens[0], choices, tokens[2], tokens[3], tokens[4]);
                 quizes.add(q);
                 questionCount--;
             }
             if (quizes.size() != 0) {
                 System.out.println(quizes.size() + " are added to the quiz");
-            }else {
+            } else {
                 System.out.println("Quiz does not have questions");
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Error! Malformed question");
         }
     }
@@ -146,13 +146,14 @@ public final class Solution {
      * @param      quiz         The quiz object
      * @param      answerCount  The answer count
      */
-    public static void startQuiz(final Scanner s, final Quiz quiz, int answerCount) {
+    public static void startQuiz(final Scanner s,
+     final Quiz quiz, int answerCount) {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
         for (int i = 0; i < quizes.size(); i++) {
-            System.out.println(quizes.get(i).questiontxt +
-             "(" + quizes.get(i).scorereport + ")");
+            System.out.println(quizes.get(i).questiontxt
+             + "(" + quizes.get(i).scorereport + ")");
             for (int j = 0; j < quizes.get(i).choices.length; j++) {
                 System.out.print(quizes.get(i).choices[j] + "   ");
             }
