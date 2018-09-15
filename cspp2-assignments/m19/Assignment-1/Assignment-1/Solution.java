@@ -13,21 +13,49 @@ class Quiz{
         this.scorereport = scorereport;
         this.penality = penality;
     }
+    /**
+     * Gets the question.
+     *
+     * @return     The question.
+     */
     String getQuestion() {
         return this.questiontxt;
     }
+    /**
+     * Gets the answers.
+     *
+     * @return     The answers.
+     */
     String[] getAnswers() {
         return this.choices;
     }
+    /**
+     * Gets the correct option.
+     *
+     * @return     The correct option.
+     */
     String getCorrectOption() {
         return this.correctoption;
     }
+    /**
+     * Gets the score report.
+     *
+     * @return     The score report.
+     */
     String getScoreReport() {
         return this.scorereport;
     }
+    /**
+     * Gets the penality.
+     *
+     * @return     The penality.
+     */
     String getPenality() {
         return this.penality;
     }
+    /**
+     * Constructs the obj.
+     */
     public Quiz() {
 
     }
