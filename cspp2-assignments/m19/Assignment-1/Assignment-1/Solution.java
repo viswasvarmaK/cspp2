@@ -151,18 +151,18 @@ public final class Solution {
                     return;
                 }
                 if (choices.length <= 1) {
-                    System.out.println
-                    ("trick question  does not have enough answer choices");
+                    System.out.println(
+"trick question  does not have enough answer choices");
                     return;
                 }
                 if (Integer.parseInt(tokens[3]) < 0) {
-                    System.out.println
-                    ("Invalid max marks for question about sony");
+                    System.out.println(
+"Invalid max marks for question about sony");
                     return;
                 }
                 if (Integer.parseInt(tokens[4]) > 0) {
-                    System.out.println
-                    ("Invalid penalty for question about sony");
+                    System.out.println(
+"Invalid penalty for question about sony");
                     return;
                 }
                 if (!tokens[2].equals("1") && !tokens[2].equals("2")
