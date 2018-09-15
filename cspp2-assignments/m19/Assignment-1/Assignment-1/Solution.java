@@ -19,8 +19,7 @@ class Quiz {
      * @param      penality       The penality
      */
     Quiz(final String questiontxt, final String[] choices,
-     final String correctoption,
-     final String scorereport, final String penality) {
+final String correctoption, final String scorereport, final String penality) {
         this.questiontxt = questiontxt;
         this.choices = choices;
         this.correctoption = correctoption;
