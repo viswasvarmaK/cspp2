@@ -192,12 +192,12 @@ public final class Solution {
         for (int i = 0; i < quizes.size(); i++) {
             System.out.println(quizes.get(i).questiontxt);
                 if (answers.get(i).equals(quizes.get(i).correctoption)) {
-                    System.out.println(" Correct Answer! - Marks Awarded: " +
-                     quizes.get(i).scorereport);
+                    System.out.println(" Correct Answer! - Marks Awarded: "
+                     + quizes.get(i).scorereport);
                     finalScore += Integer.parseInt(quizes.get(i).scorereport);
                 } else {
-                    System.out.println(" Wrong Answer! - Penalty: " +
-                     quizes.get(i).penality);
+                    System.out.println(" Wrong Answer! - Penalty: "
+                     + quizes.get(i).penality);
                     finalScore += Integer.parseInt(quizes.get(i).penality);
                 }
     }
