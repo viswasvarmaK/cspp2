@@ -1,11 +1,23 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-class Quiz{
-    String questiontxt;
-    String[] choices;
-    String correctoption;
-    String scorereport;
-    String penality;
+/**
+ * Class for Quiz.
+ */
+class Quiz {
+    public String questiontxt;
+    public String[] choices;
+    public String correctoption;
+    public String scorereport;
+    public String penality;
+    /**
+     * Constructs the object.
+     *
+     * @param      questiontxt    The questiontxt
+     * @param      choices        The choices
+     * @param      correctoption  The correctoption
+     * @param      scorereport    The scorereport
+     * @param      penality       The penality
+     */
     Quiz(String questiontxt, String[] choices, String correctoption, String scorereport, String penality) {
         this.questiontxt = questiontxt;
         this.choices = choices;
