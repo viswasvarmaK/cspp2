@@ -5,7 +5,9 @@ import java.util.Arrays;
  * Class for todoist main.
  */
 public class TodoistMain {
+	TodoistMain() {
 
+	}
     /**
      * Starts a test.
      */
