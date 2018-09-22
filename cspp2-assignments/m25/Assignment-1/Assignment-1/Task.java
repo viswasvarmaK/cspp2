@@ -9,7 +9,10 @@ class Task {
 	int timeToComplete;
 	boolean important;
 	boolean urgent;
-	String status;	
+	String status;
+	Task() {
+
+	}
 	Task(String title, String assignedTo, int timeToComplete, boolean important,
 	     boolean urgent, String status) throws Exception {
 		if (title.equals("") || title == null) throw new Exception("Title not provided");
